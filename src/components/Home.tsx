@@ -9,6 +9,7 @@ function Home() {
       <button onClick={() => navigate("/memo")}>Memo Demo</button>
       <button onClick={() => navigate("/ref")}>Ref Demo</button>
       <button onClick={() => navigate("/callback")}>Callback Demo</button>
+      <button onClick={() => navigate("/children")}>Children Demo</button>
     </div>
   );
 }

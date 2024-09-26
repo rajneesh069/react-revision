@@ -6,6 +6,7 @@ import DebounceDemo from "./components/DebounceDemo";
 import MemoDemo from "./components/MemoDemo";
 import RefDemo from "./components/RefDemo";
 import CallbackDemo from "./components/CallbackDemo";
+import WrapperComponent, { ChildComponent } from "./components/ChildrenDemo";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
           <Route path="/memo" element={<MemoDemo />} />
           <Route path="/ref" element={<RefDemo />} />
           <Route path="/callback" element={<CallbackDemo />} />
+          <Route
+            path="/children"
+            element={<WrapperComponent children={<ChildComponent />} />}
+          />
         </Routes>
       </BrowserRouter>
     </>
