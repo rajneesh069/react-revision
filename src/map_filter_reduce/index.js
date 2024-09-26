@@ -35,3 +35,5 @@ const flatArray = nestedArray.reduce((accumulator, currentValue) => {
 
 console.log(flatArray); // Output: [1, 2, 3, 4, 5]
 
+numbers.sort((a,b)=>a-b) // ascending 
+numbers.sort((a,b)=>b-a) // descending 
