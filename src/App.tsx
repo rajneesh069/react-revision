@@ -7,6 +7,7 @@ import MemoDemo from "./components/MemoDemo";
 import RefDemo from "./components/RefDemo";
 import CallbackDemo from "./components/CallbackDemo";
 import WrapperComponent, { ChildComponent } from "./components/ChildrenDemo";
+import { CounterPropDrilling } from "./components/PropDrilling";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/memo" element={<MemoDemo />} />
           <Route path="/ref" element={<RefDemo />} />
           <Route path="/callback" element={<CallbackDemo />} />
+          <Route path="/drillProp" element={<CounterPropDrilling />} />
           <Route
             path="/children"
             element={<WrapperComponent children={<ChildComponent />} />}
